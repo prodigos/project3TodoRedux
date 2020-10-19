@@ -9,7 +9,7 @@ import * as serviceWorker from "./serviceWorker";
 
 // store a globalized state
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 //  action (what we are going to call)
 
