@@ -1,12 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../../src/index.css";
 
-const Nav = () => {
+const navStyle = {
+    color: 'white'
+}
+
+
+const Nav = (props) => {
   return (
-    <ul>
-      <li>About</li>
-      <li>To do</li>
-      <li>Contacts</li>
-    </ul>
+   <nav>
+   <h3>Logo</h3>
+   <ul className="nav-links">
+   <Link style={navStyle} to="/todo">
+       <li>To Do</li>
+
+   </Link>
+       <Link to="/contacts">
+       <li>Contacts</li>
+
+       </Link>
+   </ul>
+       
+   </nav>
   );
 };
 

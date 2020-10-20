@@ -6,7 +6,7 @@ const Contacts = () => {
       <input type="text" />
       <input type="text" />
       <input type="text" />
-      <button type="submit" />
+      <button type="submit" value="submit" placeholder="submit">Submit</button>
     </form>
   );
 };
