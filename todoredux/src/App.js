@@ -4,6 +4,7 @@ import VisibleTodoList from '../src/containers/VisibleTodoList'
 import TodoList from "../src/Components/TodoList";
 import TodoForm from "./Components/TodoForm.js";
 import Contacts from "./Components/Contacts.js";
+import Nav from "./Components/NavBar";
 
 
 function App() {
@@ -12,12 +13,12 @@ function App() {
   return (
     <div className="App">
     <h1>To Do App</h1>
-    <TodoForm />
+    <Nav />
     <VisibleTodoList />
-    <Footer />
       <TodoList />
       <TodoForm />
       <Contacts />
+    <Footer />
     </div>
   );
 }
