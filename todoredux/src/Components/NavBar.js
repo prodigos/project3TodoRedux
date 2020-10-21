@@ -2,27 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../src/index.css";
 
-const navStyle = {
-    color: 'white'
-}
-
-
-const Nav = (props) => {
+const Nav = () => {
   return (
-   <nav>
-   <h3>Logo</h3>
-   <ul className="nav-links">
-   <Link style={navStyle} to="/todo">
-       <li>To Do</li>
+    <nav>
+      <h3>To Do List</h3>
+      <ul className="nav-links">
 
-   </Link>
-       <Link to="/contacts">
-       <li>Contacts</li>
-
-       </Link>
-   </ul>
-       
-   </nav>
+        <Link to="./">
+          <li>To Do</li>
+        </Link>
+        
+        <Link to="/contacts">
+          <li>Contacts</li>
+        </Link>
+      </ul>
+    </nav>
   );
 };
 

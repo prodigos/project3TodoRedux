@@ -11,19 +11,18 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
-        <h1>To Do App</h1>
         <Switch>
-          <Route path="./todoform" component={TodoForm} />
-          <Route path="./todoform" component={TodoList} />
-          <Route path="./todoform" component={Footer} />
-          <Route path="./todoform" component={VisibleTodoList}/>
-          
-          {/* <Route path="./contacts" component={Contacts} /> */}
-          {/* <TodoList /> */}
-          {/* <Footer /> */}
-          <Contacts/>
-        {/* <VisibleTodoList /> */}
+          <Nav />
+          <Route path="/" exact component={TodoForm}></Route>
+          <Route path="/" exact component={TodoList}></Route>
+          <Route path="/" exact component={Footer}></Route>
+        
+          <TodoForm />
+          <TodoList />
+          <Footer />
+          <VisibleTodoList />
+          <Route path="/contacts" component={Contacts}></Route>
+          {/* <Contacts /> */}
         </Switch>
       </div>
     </Router>
